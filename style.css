@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Dancing Script", cursive;
+  background-color: #636e72;
+  color: rgb(226, 226, 226);
+  font-weight: 700;
+}
+#holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.box {
+  height: 200px;
+  width: 400px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 30px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 10px;
+  transform: translateX(400%);
+  transition: transform 0.5s ease;
+  margin: 10px;
+}
+.London {
+  background-image: url(London.avif);
+  background-size: 100%;
+  color: black;
+  margin-top: 1rem;
+}
+.NewYork {
+  background-image: url(new\ york.jpeg);
+  background-size: contain;
+}
+.Switzerland {
+  background-image: url(switzerland.jpeg);
+  background-size: cover;
+  color: black;
+}
+.Iceland {
+  background-image: url(iceland.jpeg);
+  background-size: cover;
+}
+.Itlay {
+  background-image: url(itlay.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+.Japan {
+  background-image: url(japan.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+.Spain {
+  background-image: url(spain.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+.Prague {
+  background-image: url(prague.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+.India {
+  background-image: url(india.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  color: black;
+}
+.Copenhagen {
+  background-image: url(copenhagen.webp);
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 45px;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px;
+  text-transform: uppercase;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+.box.show {
+  transform: translateX(0);
+}
